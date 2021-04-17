@@ -1,152 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MyBhumi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>My Bhumi</title>
+    <style>
+        .landing-image {
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 100%; /* set to 100% for full overlay width */
+        }
+        .mission-card {
+            padding-bottom: 5px;
+        }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="bs-example">
-
-            <nav class="navbar navbar-expand-md pt-5 bg-white">
-                <div class="container-fluid">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="images/mybhumi1.png" height="110" alt="Mybhumi">
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link active">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown">
-                                    About us 
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="Who we are.html" class="dropdown-item">Who we are </a></li>
-                                    <li><a href="What we believe.html" class="dropdown-item">What we believe</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown">
-                                    Themes
-
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="themes.html" class="dropdown-item">Bhumikulum </a></li>
-                                    <li><a href="themes.html" class="dropdown-item">Gramakulum</a></li>
-                                    <li><a href="themes.html" class="dropdown-item">Dakshagram</a></li>                                       
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/" class="nav-link">Get Involved</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown">
-                                    Contact us
-
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="themes.html" class="dropdown-item">FAQs </a></li>
-                                    <li><a href="themes.html" class="dropdown-item">Get in touch</a></li>                                       
-                                </ul>
-                            </li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" >
+                <img src="images/mybhumi1.png" height="110px" alt="My Bhumi Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutUsNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutUsNavbarDropdown">
+                            <li><a class="dropdown-item" href="Who we are.html">Who we are</a></li>
+                            <li><a class="dropdown-item" href="what we believe.html">What we believe</a></li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="themesNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Themes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="themesNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Bhumikulum</a></li>
+                            <li><a class="dropdown-item" href="#">Gramakulum</a></li>
+                            <li><a class="dropdown-item" href="#">Dakshagram</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get Involved</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="contactNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            <li><a class="dropdown-item" href="#">Get In Touch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-
-
-    <body>
+    </nav>
+    </header>
+    <main>
+        <div class="container-fluid landing-image">
+            <img src="images/ree.jpg" class="img-fluid" alt="Image of a sprouting seed from earth">
+        </div>
+        <div class="clearfix">
+            <br>
+        </div>
         <div class="container">
-            <div class="auto">
-                <img src="images/ree.jpg" class="img-fluid" alt="...">
-            </div>
-
-            <p></p>
-
-            <div class="card bg-light mb-3" style="max-width: auto;">
-                <div class="card-body">
-                    <div class="text-xl-center">
-                        <div class="text-success">
-                            <h5 class="card-title"><b>Our Vision</b></h5>
+            <div class="row">
+                <div class="card-group mission-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Our Vision</h5>
+                            <p class="card-text">Foreseeing the renaissance of a purified Ecosystem</p>
                         </div>
-                        <p class="card-text">Foreseeing the renaissance of a purified Ecosystem</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Our Existence</h5>
+                            <p class="card-text">We are an organisation conceived to deliver record breaking contribution to the Environment’s Health Management and Developmental Sciences focused extensively on Sustainable Development.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <p></p>
-            <div class="card-deck">
-                <div class="card bg-light mb-3">
-                    <div class="card-body">
-                        <div class="text-success">
-                            <div class="text-xl-center">
-                                <h5 class="card-title"><b>Our Existence</b></h5>
-                            </div>
+            <div class="row">
+                <div class="card-group mission-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Our Obligation</h5>
+                            <p class="card-text">We are Voluntary Self Obligated Catalysts, who, align Business houses and communities and positively initiate their active involvement in converging Social, Political, Economical and Environmental Diasporas on an equilateral platform of sustainability (in ‘Fact’ rather than ‘Theory’), where Social Equitability, Political Rendition and Economical Viability are met without percolating the Environmental Fabric.</p>
                         </div>
-                        <p class="card-text">We An organisation conceived to deliver record breaking contribution to
-                            the
-                            Environment’s Health Management and Developmental Sciences focused extensively on
-                            Sustainable
-                            Development.</p>
                     </div>
-
-                </div>
-                <div class="card bg-light mb-3">
-                    <div class="card-body">
-                        <div class="text-success">
-                            <div class="text-xl-center">
-                                <h5 class="card-title"><b>Our Obligation</b></h5>
-                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Our Mission</h5>
+                            <p class="card-text">To initiate participatory Democratic Processes that create platforms to involve the Business, Political and Social Community to converge their necessities, ideas and strategies on progressive Sustainable Development by
+                                <ul>
+                                    <li>Arresting Environmental Degradation</li>
+                                    <li>Sustaining Environmental Equilibrium</li>
+                                    <li>Renforcing Environmental Renewal</li>
+                                </ul>
+                            </p>
                         </div>
-                        <p class="card-text">We are Voluntary Self Obligated Catalysts, who, align Business houses
-                            and
-                            communities and positively initiate their active involvement in converging Social,
-                            Political,
-                            Economical and Environmental Diasporas on an equilateral platform of sustainability (in
-                            ‘Fact’
-                            rather than ‘Theory’), where Social Equitability, Political Rendition and Economical
-                            Viability
-                            are met without percolating the Environmental Fabric.</p>
-                    </div>
-                </div>
-
-            </div>
-            <p></p>
-
-            <div class="card bg-light mb-3" style="max-width: auto;">
-                <div class="card-body">
-                    <div class="text-xl-center">
-                        <div class="text-success">
-                            <h5 class="card-title"><b>Our Mission</b></h5>
-                        </div>
-                        <p class="card-text-left">To initiate participatory Democratic Processes that create
-                            platforms
-                            to
-                            involve the Business, Political and Social Community to converge their necessities,
-                            ideas
-                            and
-                            strategies on progressive Sustainable Development by</p>
-                    </div>
-                    <div class="text-xl-center">
-                        <ul>Arresting Environmental Degradation</ul>
-                        <ul>Sustaining Environmental Equilibrium</ul>
-                        <ul>Renforcing Environmental Renewal</ul>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </main>
 
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+</body>
 </html>
