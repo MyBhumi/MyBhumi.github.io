@@ -36,10 +36,39 @@
             background-color: rgb(230, 230, 230);
             width: 100%;
         }
-        #h2{
-      text-align: center;
-      color: #5cb85c;
-    }
+
+        #h2 {
+            text-align: center;
+            color: #5cb85c;
+        }
+
+        #p {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #h5 {
+            margin-left: 5px;
+        }
+
+
+        .row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .board {
+            height: 100px;
+            width: 100%;
+            background-color: #186400;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        } 
     </style>
 </head>
 
@@ -70,7 +99,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="themesNavbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="themesNavbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Themes
                             </a>
@@ -84,7 +113,7 @@
                             <a class="nav-link" href="get-involved.html">Get Involved</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="contactNavbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle active" href="#" id="contactNavbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Contact Us
                             </a>
@@ -98,28 +127,76 @@
             </div>
         </nav>
     </header>
+    <br></br>
 
-    <div style="overflow-x:auto;">
-    <div class="img2">
-        <img src="images/grama2.png" alt="gramakulum">
+    <div class="row">
+        <div class="col-xs-12 board">FAQ's</div>
     </div>
-    <div class="themes">
-        <h2 id="h2">Gramakulum</h2>
-        <p>
-            Evolutionary Platform Economy: The platform economy considers five areas in which village occupations are
-            active:
+
+    <div class="container-fluid">
+        <br></br>
+        <h5 id="h5">
+            What is My Bhumi?
+        </h5>
+
+        <p id="p">
+            My Bhumi is “A Trust For Global Consciousness”, a learning organization that advocates and campaigns for
+            sustainable development in India particularly in Karnataka. We are presently more than a hundred people
+            around
+            India working to end social lethargy and develop social vitality towards sustainable development.
         </p>
-        <ol>
-            <li>Cooperative efficiency and market structure </li>
-            <li>Security and contract enforcement</li>
-            <li>Information asymmetries and quality standards</li>
-            <li>Human capital investment</li>
-            <li>Technological innovation</li>
-        </ol>
-        <p>The platform sets scope for a robust rural economic diversification.</p>
+        <p id="p">
+            As an organisation we do not believe in the concept of charity, we are all about creating opportunities and
+            functioning as radical missionaries of Positive change. We lobby, we campaign to change human behaviour
+            without
+            punishment. We do that by evolving human through our engagements. We design our activities on reinforcing
+            strategies and effective campaign based interventions, which are very personal, involving the mind, body and
+            soul.
+        </p>
+        <h5 id="h5">
+            What makes My Bhumi different from the rest of them?
+        </h5>
+        <p id="p">
+            We define the behaviour of the problem by description and count.
+        </p>
+        <p id="p">
+            We design our campaigns and activities as interventions and engagements that changes the behaviour of the
+            problem.
+        </p>
+        <p id="p">
+            We identify or construct effective reinforcers.
+        </p>
+        <p id="p">
+            We apply the reinforcers through our engagements consistently to shape or change the behaviour
+        </p>
+        <h5 id="h5">
+            How is my Bhumi Governed?
+        </h5>
+        <p id="p">
+            My Bhumi is Governed by a Board of Trustees made up of individuals with extensive experience in advocacy,
+            activism, policy making, politics, human resource, farming, education, engineering, psychology etc. The
+            board oversees My Brumi’s work and ensures that My Bhumi is making progress on its mission. The full Board
+            meets biannually, while the Board committees meet regularly and as needed. The committees include: Program,
+            Executive, Development, Nominating and Membership, Audit and leadership team, under the direction of Founder
+            Anish Kumar Sreedharan, guides and implements My Bhumi’s strategy.
+        </p>
+        <h5 id="h5">
+            How is My Bhumi Legally Structured?
+        </h5>
+        <p id="p">
+            My Bhumi as of today is a non-tax exempted organisation incorporated as a trust in Bengaluru district,
+            Karnataka state. My Bhumi has several verticals under its belt, such as "Frillofarm"
+        </p>
+        <h5 id="h5">
+            How is My Bhumi Funded?
+        </h5>
+        <p id="p">
+            My Bhumi so far has been self-funded through a combination of activities, we do not solicit funds from the
+            general public or from the government.
+        </p>
+
+
     </div>
-
-
     <!--JQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -129,7 +206,8 @@
         crossorigin="anonymous"></script>
 
 
-</div>
+
+
 </body>
 
 </html>
